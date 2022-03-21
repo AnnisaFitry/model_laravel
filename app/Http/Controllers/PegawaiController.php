@@ -12,7 +12,9 @@ class PegawaiController extends Controller
     	// mengambil data pegawai
     	//$pegawai = Pegawai::all();
 		// mengambil data pegawai yang pertama
-		$pegawai = Pegawai::first(); 
+		// $pegawai = Pegawai::first(); 
+		// mengambil data pegawai yang id nya 1
+		$pegawai = Pegawai::find(1); 
     	// mengirim data pegawai ke view pegawai
     	return view('pegawai', ['pegawai' => $pegawai]);
     }
